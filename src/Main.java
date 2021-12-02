@@ -43,45 +43,43 @@ public class Main {
         System.out.println("Masukkan additional point untuk Def : ");
         addDef2 = scan.nextInt();
 
-        Hero player2 = new Hero(namaChar2, tipeChar1, addHp2, addAtk2, addDef2);
-
         Hero[] player = new Hero[1];
         switch (tipeChar1) {
-            case 1:
-                Hero player1T = new Hero(namaChar1, tipeChar1, addHp1, addAtk1, addDef1);
+            case 1 -> {
+                Hero player1T = new Tank(namaChar1, tipeChar1, addHp1, addAtk1, addDef1);
                 player[0] = player1T;
-                break;
-            case 2:
-                Hero player1F = new Hero(namaChar1, tipeChar1,addHp1, addAtk1, addDef1);
+            }
+            case 2 -> {
+                Hero player1F = new Fighter(namaChar1, tipeChar1, addHp1, addAtk1, addDef1);
                 player[0] = player1F;
-                break;
-            case 3:
-                Hero player1A = new Hero(namaChar1, tipeChar1, addHp1, addAtk1, addDef1);
+            }
+            case 3 -> {
+                Hero player1A = new Assassin(namaChar1, tipeChar1, addHp1, addAtk1, addDef1);
                 player[0] = player1A;
-                break;
-            case 4:
-                Hero player1W = new Hero(namaChar1, tipeChar1, addHp1, addAtk1, addDef1);
+            }
+            case 4 -> {
+                Hero player1W = new Wizard(namaChar1, tipeChar1, addHp1, addAtk1, addDef1);
                 player[0] = player1W;
-                break;
+            }
         }
 
         switch (tipeChar2) {
-            case 1:
-                Hero player2T = new Hero(namaChar1, tipeChar1, addHp1, addAtk1, addDef1);
+            case 1 -> {
+                Hero player2T = new Tank(namaChar1, tipeChar1, addHp1, addAtk1, addDef1);
                 player[1] = player2T;
-                break;
-            case 2:
-                Hero player2F = new Hero(namaChar1, tipeChar1, addHp1, addAtk1, addDef1);
+            }
+            case 2 -> {
+                Hero player2F = new Fighter(namaChar1, tipeChar1, addHp1, addAtk1, addDef1);
                 player[1] = player2F;
-                break;
-            case 3:
-                Hero player2A = new Hero(namaChar1, tipeChar1, addHp1, addAtk1, addDef1);
+            }
+            case 3 -> {
+                Hero player2A = new Assassin(namaChar1, tipeChar1, addHp1, addAtk1, addDef1);
                 player[1] = player2A;
-                break;
-            case 4:
-                Hero player2W = new Hero(namaChar1, tipeChar1, addHp1, addAtk1, addDef1);
+            }
+            case 4 -> {
+                Hero player2W = new Wizard(namaChar1, tipeChar1, addHp1, addAtk1, addDef1);
                 player[1] = player2W;
-                break;
+            }
         }
 
 
