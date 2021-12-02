@@ -2,7 +2,7 @@ import java.util.Scanner;
 // game UAS
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Selamat datang di SQUIRT GAME!!!");
+        System.out.println("Selamat datang di SQUIRT GAME");
         Scanner scan = new Scanner(System.in);
         String namaChar1, namaChar2;
         int addHp1, addAtk1, addDef1, addHp2, addAtk2, addDef2, tipeChar1, tipeChar2;
