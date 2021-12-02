@@ -21,40 +21,12 @@ public class Hero {
         this.addAtk = addAtk;
         this.addDef = addDef;
         /*
-        switch (this.tipeChar) {
-            case 1:
-                tank();
-                break;
-            case 2:
-                fighter();
-                break;
-            case 3:
-                assassin();
-                break;
-            case 4:
-                wizard();
-                break;
+        if(this.tipeChar == 1) {
+            new Tank(this.charName, this.addHp, this.addAtk, this.addDef);
+        } else if(this.tipeChar == 2) {
+            new Fighter(this.charName, this.addHp, this.addAtk, this.addDef);
         }
 
          */
     }
-
-    public Tank tank() {
-        return new Tank(this.charName, this.tipeChar, this.addHp, this.addAtk, this.addDef);
-    }
-
-    public Fighter fighter() {
-        return new Fighter(this.charName, this.tipeChar, this.addHp, this.addAtk, this.addDef);
-    }
-
-    public Assassin assassin() {
-        return new Assassin(this.charName, this.tipeChar, this.addHp, this.addAtk, this.addDef);
-    }
-
-    public Wizard wizard() {
-        return new Wizard(this.charName, this.tipeChar, this.addHp, this.addAtk, this.addDef);
-    }
-
-
-
 }
