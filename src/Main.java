@@ -2,6 +2,7 @@ import java.util.Scanner;
 // game UAS
 public class Main {
     public static void main(String[] args) {
+        System.out.println("Selamat datang di SQUIRT GAME");
         Scanner scan = new Scanner(System.in);
         String namaChar1, namaChar2;
         int addHp1, addAtk1, addDef1, addHp2, addAtk2, addDef2, tipeChar1, tipeChar2;
@@ -25,6 +26,7 @@ public class Main {
         addDef1 = scan.nextInt();
 
         Hero player1 = new Hero(namaChar1, tipeChar1, addHp1, addAtk1, addDef1);
+
 
 
         //Mengambil input untuk membuat player 2
