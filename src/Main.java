@@ -28,7 +28,6 @@ public class Main {
         Hero player1 = new Hero(namaChar1, tipeChar1, addHp1, addAtk1, addDef1);
 
 
-
         //Mengambil input untuk membuat player 2
         System.out.print("Masukkan Nama Karakter Player2 : ");
         namaChar2 = scan.next();
@@ -50,6 +49,7 @@ public class Main {
 
 
         int HP1, ATK1, DEF1, HP2, ATK2, DEF2;
+        //percobaan1
         if (tipeChar1 == 1) {
             System.out.println("Stat Player 1");
             player1.tank().display();
@@ -73,7 +73,6 @@ public class Main {
             case 1:
                 System.out.println("Stat Player 1");
                 player1.tank().display();
-                HP1 = player1.tank().FinalHp;
                 break;
             case 2:
                 System.out.println("Stat Player 1");
