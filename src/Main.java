@@ -68,7 +68,6 @@ public class Main {
             HP1 = player1.wizard().FinalHp;
         }
 
-
         switch (tipeChar1) {
             case 1:
                 System.out.println("Stat Player 1");
