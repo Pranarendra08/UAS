@@ -1,4 +1,5 @@
 import java.util.Scanner;
+// game UAS
 public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
@@ -57,14 +58,14 @@ public class Main {
             HP1 = player1.fighter().FinalHp;
         } else if (tipeChar1 == 3) {
             System.out.println("Stat Player 1");
-            player1.assassin()k().display();
+            player1.assassin().display();
             HP1 = player1.assassin().FinalHp;
         } else if (tipeChar1 ==4) {
             System.out.println("Stat Player 1");
             player1.wizard().display();
             HP1 = player1.wizard().FinalHp;
         }
-        System.out.println();
+
 
         switch (tipeChar1) {
             case 1:
@@ -86,7 +87,6 @@ public class Main {
                 break;
         }
 
-        System.out.println(HP1);
 
         switch (tipeChar2) {
             case 1:
