@@ -29,4 +29,18 @@ public class Hero {
 
          */
     }
+
+    public Object verivikasi(int tipeChar) {
+        switch (this.tipeChar) {
+            case 1:
+                new Tank(this.charName, this.tipeChar, this.addHp, this.addAtk, this.addDef);
+            case 2:
+                new Fighter(this.charName, this.tipeChar, this.addHp, this.addAtk, this.addDef);
+            case 3:
+                new Assassin(this.charName, this.tipeChar, this.addHp, this.addAtk, this.addDef);
+            case 4:
+                new Wizard(this.charName, this.tipeChar, this.addHp, this.addAtk, this.addDef);
+        }
+        return null;
+    }
 }
